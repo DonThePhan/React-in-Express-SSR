@@ -13,9 +13,15 @@
  *      1.  'npm install @babel/preset-env @babel/preset-react @babel/register ignore-styles'
  *      2.  CREATE root > "server" > "index.js"
  *  6.  add "ssr": "node server/index.js" to package.json script
- *  7.  RUN THE CODE:
- *      1.  After React code is updated always run 'npm run build' to create new build file for code to run from
- *      2.  'npm run ssr'
+ *
+ *  7.  RUNNING THE CODE:
+ **     A.  REACT ALONE (w/o Express) - LIVE:
+ *          1.  Use the HYDRATE code in src/index.js (remember to use 'react-dom/client' for ReactDOM)
+ *          2.  'npm start'
+ **     B.  REACT SSR - STATIC:
+ *          1.  Use the regular code in src/index.js (remember to use 'react-dom' for ReactDOM)
+ *          2.  Run 'npm run build' to create new build file for code to run from
+ *          3.  'npm run ssr'
  */
 
 import React, { useState } from 'react';

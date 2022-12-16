@@ -13,6 +13,9 @@
  *      1.  'npm install @babel/preset-env @babel/preset-react @babel/register ignore-styles'
  *      2.  CREATE root > "server" > "index.js"
  *  6.  add "ssr": "node server/index.js" to package.json script
+ *  7.  RUN THE CODE:
+ *      1.  After React code is updated always run 'npm run build' to create new build file for code to run from
+ *      2.  'npm run ssr'
  */
 
 import React, { useState } from 'react';
